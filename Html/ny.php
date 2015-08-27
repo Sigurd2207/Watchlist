@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -7,9 +6,9 @@
 <body>
     <h1>Din film/serie har blitt lagt til!</h1>
     <?php
-        $tittel = $POST["Tittel"];
-        $beskrivelse = $POST["Beskrivelse"];
-        $regi = $POST["Regi"];
+        $tittel = $POST["tittel"];
+        $beskrivelse = $POST["beskrivelse"];
+        $regi = $POST["regi"];
 
         $connection = new mysqli('localhost', 'root', '', 'watchlist');
 		if($connection->connect_error) die($connection->connect_error);
